@@ -45,6 +45,11 @@
 		});
 
 
-		
+		// Delete Storage
+		let deleteStorage = document.getElementById("delete-storage");
+		deleteStorage.addEventListener("click", function() {
+			localStorage.clear();
+			console.log("Local Storage has been deleted");
+		});
 	}
 }());
