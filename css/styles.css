@@ -29,6 +29,45 @@ header {
 
 
 /* Main /////////////////////////////////////////////////////////////////// */
+form {
+	display: flex;
+	flex-direction: row;
+	flex-grow: 1;
+	flex-wrap: wrap;
+	justify-content: space-around;
+	align-items: center;
+	margin-top: 20px;
+}
+
+table {
+	margin-top: 10px;
+	min-width: 100%;
+	background-color: #F8C88C;
+	text-align: center;
+	color: black;
+}
+
+table, td, th, tr {
+	border: 2px #FF8671 solid;
+	border-collapse: collapse;
+}
+
+td, th {
+	padding: 10px 0;
+}
+
+#form-submit {
+	border: 1px #F8C88C solid;
+	border-radius: 6px;
+	padding: 2px 20px;
+	background-color: #3F50BA;
+	font-size: 1.1em;
+	color: white;
+}
+
+#form-submit:active {
+	background-color: green;
+}
 
 
 
