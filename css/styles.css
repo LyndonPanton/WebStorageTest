@@ -1,3 +1,7 @@
+@charset "UTF-8";
+/* Perfect Fantasy (@scheme color): https://www.schemecolor.com/perfect-fantasy.php:
+	#3F50BA, #F0A690, #F8C88C, #FF8671, #8859D0 */
+
 /* General //////////////////////////////////////////////////////////////// */
 body, html {
 	margin: 0;
@@ -11,6 +15,16 @@ body, html {
 }
 
 /* Header ///////////////////////////////////////////////////////////////// */
+h1 {
+	margin: 0;
+	padding: 10px 0;
+	text-align: center;
+}
+
+header {
+	border-bottom: 2px #F0A690 solid;
+	background-color: #3F50BA;
+}
 
 
 
