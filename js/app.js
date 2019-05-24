@@ -27,6 +27,8 @@
 
 			localStorage.people = JSON.stringify(people);
 			populateTable();
+
+			form.reset();
 		});
 
 		// console.log(!!localStorage.getItem("inputName"));
