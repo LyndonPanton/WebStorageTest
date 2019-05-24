@@ -1,4 +1,5 @@
 (function() {
+	let people = [];
 	document.getElementById("copyright-year").textContent = (new Date()).getFullYear();
 
 	if (localStorage) {
@@ -9,10 +10,21 @@
 	}
 
 	function init() {
+		// User Storage
+		if (localStorage.getItem("people")) {
+			people = JSON.parse(localStorage.getItem("people"));
+		}
+
 		let form = document.getElementById("form");
 		form.addEventListener("submit", function(event) {
 			event.preventDefault();
-			console.log(this.children[0].children[1].value, this.children[1].children[1].value);
+
+			let person = {};
+			person.name = this.children[0].children[1].value;
+			person.age = this.children[1].children[1].value;
+			people.push(person);
+
+			localStorage.people = JSON.stringify(people);
 		});
 
 		// console.log(!!localStorage.getItem("inputName"));
