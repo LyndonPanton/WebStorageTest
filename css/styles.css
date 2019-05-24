@@ -56,6 +56,22 @@ td, th {
 	padding: 10px 0;
 }
 
+#delete-storage {
+	display: block;
+	margin: 10px auto;
+	border: 1px green solid;
+	border-radius: 6px;
+	padding: 4px 10px;
+	background-color: red;
+	font-size: 1.1em;
+	color: white;
+}
+
+#delete-storage:active {
+	border-color: red;
+	background-color: black;
+}
+
 #form-submit {
 	border: 1px #F8C88C solid;
 	border-radius: 6px;
