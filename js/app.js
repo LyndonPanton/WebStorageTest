@@ -13,6 +13,7 @@
 		// User Storage
 		if (localStorage.getItem("people")) {
 			people = JSON.parse(localStorage.getItem("people"));
+			populateTable();
 		}
 
 		let form = document.getElementById("form");
@@ -25,6 +26,7 @@
 			people.push(person);
 
 			localStorage.people = JSON.stringify(people);
+			populateTable();
 		});
 
 		// console.log(!!localStorage.getItem("inputName"));
@@ -62,6 +64,28 @@
 		deleteStorage.addEventListener("click", function() {
 			localStorage.clear();
 			console.log("Local Storage has been deleted");
+			people = [];
 		});
+
+		// Display Storage
+		function populateTable() {
+			let tableBody = document.getElementsByTagName("tbody")[0];
+			while (tableBody.firstChild) {
+				tableBody.removeChild(tableBody.firstChild);
+			}
+			people.forEach(function(person) {
+				let row = document.createElement("tr");
+				let nameCell = document.createElement("td");
+				nameCell.textContent = person.name;
+
+				let ageCell = document.createElement("td");
+				ageCell.textContent = person.age;
+
+				row.appendChild(nameCell);
+				row.appendChild(ageCell);
+
+				tableBody.appendChild(row);
+			});
+		}
 	}
 }());
