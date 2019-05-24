@@ -72,3 +72,14 @@ td, th {
 
 
 /* Footer ///////////////////////////////////////////////////////////////// */
+footer {
+	position: fixed;
+	bottom: 0;
+	margin-top: 10px;
+	border-top: 2px #F0A690 solid;
+	min-width: 100%;
+	padding: 10px 0;
+	background-color: #3F50BA;
+	text-align: center;
+	font-size: 1.3em;
+}
