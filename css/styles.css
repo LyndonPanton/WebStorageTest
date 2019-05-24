@@ -56,6 +56,10 @@ td, th {
 	padding: 10px 0;
 }
 
+tfoot, thead {
+	background-color: #F0A690;
+}
+
 #delete-storage {
 	display: block;
 	margin: 10px auto;
