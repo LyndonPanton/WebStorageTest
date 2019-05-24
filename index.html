@@ -14,7 +14,38 @@
 	</header>
 
 	<main id="main">
-		
+		<form id="form">
+			<label for="form-name">
+				<span class="label-title">Name:</span>
+				<input id="form-name" type="text" name="form-name" />
+			</label>
+
+			<label for="form-age">
+				<span class="label-title">Age:</span>
+				<input id="form-age" type="number" name="form-age" />
+			</label>
+
+			<input id="form-submit" type="submit" value="Add" />
+		</form>
+
+		<table id="people">
+			<thead>
+				<tr>
+					<th>Name</th>
+					<th>Age</th>
+				</tr>
+			</thead>
+
+			<tbody>
+				
+			</tbody>
+
+			<tfoot>
+				<tr>
+					<td>This table is kept up to date using the Web Storage API</td>
+				</tr>
+			</tfoot>
+		</table>
 	</main>
 
 	<footer id="footer">
