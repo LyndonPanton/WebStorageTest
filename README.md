@@ -18,3 +18,7 @@
 
 ## Extra Information
 > 1. This was done for one of the activities for the w3c and Microsoft's *HTML5 Coding Essentials and Best Practices* course for the *Front End Web Developer Professional Certificate*
+
+## Preview
+![Screenshot 1](./img/screenshot1.png)
+![Screenshot 2](./img/screenshot2.png)
